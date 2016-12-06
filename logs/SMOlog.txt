@@ -1,0 +1,155 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     reviews
+Instances:    50000
+Attributes:   51
+              instead
+              strong
+              today
+              amazing
+              brilliant
+              minutes
+              city
+              worse
+              perfect
+              best
+              fine
+              seemed
+              great
+              love
+              supposed
+              sometimes
+              heart
+              excellent
+              decent
+              killer
+              crap
+              worst
+              loved
+              hilarious
+              lives
+              unfortunately
+              couldn
+              highly
+              awful
+              terrible
+              guess
+              wonderful
+              works
+              nothing
+              enjoyed
+              oh
+              script
+              poor
+              war
+              beautiful
+              performances
+              waste
+              problem
+              stupid
+              boring
+              money
+              horrible
+              bad
+              favorite
+              late
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: p, n
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.6391 * (normalized) instead
+ +      -2.1291 * (normalized) strong
+ +      -5.6623 * (normalized) today
+ +      -5.786  * (normalized) amazing
+ +      -3.4474 * (normalized) brilliant
+ +       5.1757 * (normalized) minutes
+ +      -2.6532 * (normalized) city
+ +       4.6889 * (normalized) worse
+ +      -3.7877 * (normalized) perfect
+ +      -7.0111 * (normalized) best
+ +      -1.3565 * (normalized) fine
+ +       2.4223 * (normalized) seemed
+ +      -5.1745 * (normalized) great
+ +      -4.2145 * (normalized) love
+ +       3.983  * (normalized) supposed
+ +      -1.8022 * (normalized) sometimes
+ +      -4.7992 * (normalized) heart
+ +      -3.8644 * (normalized) excellent
+ +       2.1577 * (normalized) decent
+ +       1.4118 * (normalized) killer
+ +       3.9468 * (normalized) crap
+ +      12.6264 * (normalized) worst
+ +      -2.8221 * (normalized) loved
+ +      -3.3679 * (normalized) hilarious
+ +      -1.7973 * (normalized) lives
+ +       2.9257 * (normalized) unfortunately
+ +       2.2    * (normalized) couldn
+ +      -1.9295 * (normalized) highly
+ +      11.8163 * (normalized) awful
+ +       6.4761 * (normalized) terrible
+ +       2.2934 * (normalized) guess
+ +      -4.4963 * (normalized) wonderful
+ +      -2.3862 * (normalized) works
+ +       8.6066 * (normalized) nothing
+ +      -2.5701 * (normalized) enjoyed
+ +       3.8137 * (normalized) oh
+ +       3.4304 * (normalized) script
+ +       4.8318 * (normalized) poor
+ +      -2.8843 * (normalized) war
+ +      -3.0819 * (normalized) beautiful
+ +      -1.5063 * (normalized) performances
+ +       6.7857 * (normalized) waste
+ +       2.4066 * (normalized) problem
+ +       7.149  * (normalized) stupid
+ +       6.5018 * (normalized) boring
+ +       2.3731 * (normalized) money
+ +       5.6283 * (normalized) horrible
+ +       7.4751 * (normalized) bad
+ +      -4.6218 * (normalized) favorite
+ +      -1.8852 * (normalized) late
+ -       0.3571
+
+Number of kernel evaluations: 32840228 (48.668% cached)
+
+
+
+Time taken to build model: 6.57 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       39777               79.554  %
+Incorrectly Classified Instances     10223               20.446  %
+Kappa statistic                          0.5911
+Mean absolute error                      0.2045
+Root mean squared error                  0.4522
+Relative absolute error                 40.892  %
+Root relative squared error             90.4345 %
+Total Number of Instances            50000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.849     0.258      0.767     0.849     0.806      0.796    p
+                 0.742     0.151      0.831     0.742     0.784      0.796    n
+Weighted Avg.    0.796     0.204      0.799     0.796     0.795      0.796
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 21232  3768 |     a = p
+  6455 18545 |     b = n
+
