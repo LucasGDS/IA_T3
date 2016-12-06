@@ -1,0 +1,93 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     reviews
+Instances:    50000
+Attributes:   51
+              score
+              today
+              writing
+              amazing
+              ridiculous
+              brilliant
+              crap
+              city
+              annoying
+              worse
+              perfect
+              fine
+              simple
+              seemed
+              flick
+              boring
+              david
+              supposed
+              sometimes
+              heart
+              excellent
+              decent
+              god
+              worst
+              loved
+              hilarious
+              lives
+              highly
+              awful
+              hour
+              guess
+              wonderful
+              works
+              horrible
+              enjoyed
+              unfortunately
+              terrible
+              poor
+              couldn
+              killer
+              waste
+              oh
+              problem
+              strong
+              stupid
+              known
+              roles
+              experience
+              favorite
+              late
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       36258               72.516  %
+Incorrectly Classified Instances     13742               27.484  %
+Kappa statistic                          0.4503
+Mean absolute error                      0.3246
+Root mean squared error                  0.4532
+Relative absolute error                 64.9182 %
+Root relative squared error             90.6464 %
+Total Number of Instances            50000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.822     0.371      0.689     0.822     0.749      0.775    p
+                 0.629     0.178      0.779     0.629     0.696      0.775    n
+Weighted Avg.    0.725     0.275      0.734     0.725     0.723      0.775
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 20541  4459 |     a = p
+  9283 15717 |     b = n
+
+

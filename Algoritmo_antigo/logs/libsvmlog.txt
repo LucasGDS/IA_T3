@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     reviews
+Instances:    50000
+Attributes:   51
+              score
+              today
+              writing
+              amazing
+              ridiculous
+              brilliant
+              crap
+              city
+              annoying
+              worse
+              perfect
+              fine
+              simple
+              seemed
+              flick
+              boring
+              david
+              supposed
+              sometimes
+              heart
+              excellent
+              decent
+              god
+              worst
+              loved
+              hilarious
+              lives
+              highly
+              awful
+              hour
+              guess
+              wonderful
+              works
+              horrible
+              enjoyed
+              unfortunately
+              terrible
+              poor
+              couldn
+              killer
+              waste
+              oh
+              problem
+              strong
+              stupid
+              known
+              roles
+              experience
+              favorite
+              late
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 95.88 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       38153               76.306  %
+Incorrectly Classified Instances     11847               23.694  %
+Kappa statistic                          0.5261
+Mean absolute error                      0.2369
+Root mean squared error                  0.4868
+Relative absolute error                 47.388  %
+Root relative squared error             97.353  %
+Total Number of Instances            50000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.853     0.327      0.723     0.853     0.783      0.763    p
+                 0.673     0.147      0.821     0.673     0.74       0.763    n
+Weighted Avg.    0.763     0.237      0.772     0.763     0.761      0.763
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 21321  3679 |     a = p
+  8168 16832 |     b = n
+
